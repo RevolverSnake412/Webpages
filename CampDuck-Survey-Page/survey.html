@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <!-- Font linking-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <!---->
+  <title>CampDuck Survey</title>
+  <link ref="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class = "header" id="header">
+    <img
+    src="https://i.postimg.cc/wTwzRG7V/OIG.png"
+    alt="CampDuck pre=school logo"
+    />
+    <h1 id="title">Pre-school CampDuck Survey!</h1>
+    <img
+    src="https://i.postimg.cc/wTwzRG7V/OIG.png"
+    alt="CampDuck pre=school logo"
+    />
+  </div>
+  <div class="desc">
+  <p class="description" id="description">
+    Welcome to Survey page! Take your time before 
+    <em>submitting</em> anything about your
+    complaint/issue.
+  </p>
+  </div>
+
+  <form class="survey-form" id="survey-form">
+    <fieldset>
+      <legend>Information</legend>
+      <p>
+        Fill the fields with your information, required so we can know you!
+      </p>
+      <label class="info-label "id="name-label">
+        Parent's name:
+          <input required
+          id="name" type="text"
+          placeholder="Your name...">
+      </label>
+
+      <label class="info-label" id="email-label">
+        Email address:
+          <input required
+          id="email" type="email"
+          placeholder="Your Email...">
+      </label>
+
+      <label class="info-label" id="number-label">
+        Duck age:
+        <input
+        id="number" type="number"
+        min="2" max="10"
+        placeholder="Your duck's age...">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Specie</legend>
+      <p>
+        Some parents have multiple baby ducks in
+        CampDuck. So if you have multiple complaints
+        to submit, feel free to re-submit after
+        your first issue.
+      </p>
+
+      <label class="select-label">Select duck's specie:
+        <select id="dropdown">
+          <option value="">(select specie)</option>
+          <option value="1">Mandarin Duck</option>
+          <option value="2">Wood Duck</option>
+          <option value="3">Teal Duck</option>
+          <option value="4">Pygmy Goose</option>
+          <option value="5">Bufflehead Duck</option>
+        </select>
+      <label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Reason</legend>
+      <p>
+        Kindly select a reason ^w^
+      </p>
+      <label>
+        <input class="rad-check" value="reason" type="radio" name="reason-choice"
+        /> Mistreatment
+      </label>
+      <label>
+        <input class="rad-check" value="reason" type="radio" name="reason-choice"
+        /> Bully
+      </label>
+      <label>
+        <input class="rad-check" value="reason" type="radio" name="reason-choice"
+        /> Unsatisfaction
+      </label>
+      <label>
+        <input class="rad-check" value="reason" type="radio" name="reason-choice"
+        /> Other
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Duck's favorite activity</legend>
+      <p>
+        If you don't know discuss with your baby
+        duck before proceeding. We are pretty sure your baby duck don't shut his mouth after coming back haha!
+      </p>
+
+      <label>
+        <input class="rad-check" type="checkbox" value="Swimming"
+        /> Swimming
+      </label>
+      <label>
+        <input class="rad-check" type="checkbox" value="Racing"
+        /> Racing
+      </label>
+      <label>
+        <input class="rad-check" type="checkbox" value="Drawing"
+        /> Drawing
+      </label>
+      <label>
+        <input class="rad-check" type="checkbox" value="Baking"
+        /> Baking
+      </label>
+      <label>
+        <input class="rad-check" type="checkbox" value="Watching together"
+        /> Movie party
+      </label>
+    </fieldset>
+
+    <fieldset class="textarea">
+      <legend>Additional Comments</legend>
+      <p>
+        Now, fill the textfield with your issue, and explain as you want. It doesn't have to be descriptive.
+      </p>
+      <textarea required placeholder="Additional details...">
+      </textarea>
+    </fieldset>
+
+    <input type="submit" id="submit" value="QUACK"></input>
+ 
+  </form>
+    
+
+</body>
