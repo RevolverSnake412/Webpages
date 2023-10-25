@@ -1,0 +1,69 @@
+<head>
+  <title>DuckCamp Survey Form</title>
+</head>
+
+<header>
+  <h1 id="title">
+    DuckCamp Survey Form
+  </h1>
+  <p id="description">
+    <em>Thank you for taking the time to duck us improve the platform!</em>
+  </p>
+</header>
+
+    <form id="survey-form">
+      <div id="survey-form-children">
+        <label for="name" id="name-label">Name</label>
+          <input name="name" id="name" type="text" placeholder="Enter your full duck name" required>
+      </div>
+
+      <div id="survey-form-children">
+        <label for="email" id="email-label">Email</label>
+          <input name="email" id="email" type="email" placeholder="Enter your Email" required>
+      </div>
+
+      <div id="survey-form-children">
+        <label for="number" id="number-label">Age <small>(optional)</small></label>
+          <input name="number" id="number" type="number" min="14" max="99" placeholder="Age">
+      </div>
+
+      <div id="survey-form-children">
+        <label for="dropdown" id="dropdown-label">What duck are you?</label>
+          <select name="dropdown" id="dropdown">
+            <option disabled selected></option>
+            <option value="mallard">Mallard</option>
+            <option value="domestic-duck">Domestic Duck</option>
+            <option value="alabio">Alabio</option>
+            <option value="canvasback">Canvasback</option>
+            <option value="other">Other</option>
+          </select>
+      </div>
+
+      <div id="survey-form-children">
+        <label for="recommendation" id="radio-label">Would you recommend DuckCamp to a Duck?</label>
+        <label><input name="recommendation" type="radio" value="yes" checked>Quack!</label>
+        <label><input name="recommendation" type="radio" value="maybe">Maybe</label>
+        <label><input name="recommendation" type="radio" value="no">Not sure</label>
+      </div>
+
+      <div id="survey-form-children">
+        <label for="checkbox" id="checkbox-label">What's the most thing you duck in DuckCamp?</label>
+          <label><input name="checkbox" type="checkbox" value="community">Community</label>
+          <label><input name="checkbox" type="checkbox" value="food-recipes">Food recipes</label>
+          <label><input name="checkbox" type="checkbox" value="memes" class="checkbox">Memes</label>
+          <label><input name="checkbox" type="checkbox" value="group-pages">Group Pages</label>
+          <label><input name="checkbox" type="checkbox" value="pond-pictures">Pond Pictures</label>
+          <label><input name="checkbox" type="checkbox" value="other-ducks">Other Ducks</label>
+          <label><input name="checkbox" type="checkbox" value="events">Events</label>
+      </div>
+
+      <div id="survey-form-children">
+        <label for="comments" id="comments-label">Leave comments or suggestions.</label>
+          <textarea name="comments" id="comments" placeholder="Your comment/suggestion here..."></textarea>
+      </div>
+
+      <div id="survey-form-children">
+        <label for="submit" id="submit-label"></label>
+          <input name="submit" id="submit" type="submit" value="Submit It!">
+      </div>
+    </form>

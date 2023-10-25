@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+::placeholder {
+  font-size: 1.2em;
+  color: gray;
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 1.2em;
+  color: #F2F2F2;
+  margin: 1.3em;
+}
+
+body {
+  content: "";
+  background: linear-gradient(#F9ECB054, #F9ECB012) ,url(https://i.pinimg.com/736x/42/08/94/420894c6ca1ccef9137e2331ad595a05.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+h1 {
+  margin-bottom: -15px;
+  color: #F9F8E6;
+  text-shadow: 0px 0px 5px black;
+}
+
+p {text-shadow: 0px 0px 10px black;}
+
+form {
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.65);
+  margin: auto;
+  padding: 10px;
+  border-radius: 30px 5px 70px 5px;
+  box-shadow: 10px 10px;
+}
+
+#survey-form-children {
+  position: relative;
+  padding: 0.9em 2em;
+}
+
+label {
+  display: block;
+  font-family: 'Source Code Pro', monospace;
+  color: #F2F2F2;
+  padding: 0 5px;
+  font-size: 1em;
+}
+
+#name-label, #email-label, #number-label, #dropdown-label, #radio-label, #checkbox-label, #comments-label {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2em;
+  padding: 3px 0;
+  color: #F9F8E6;
+}
+
+#name, #email, #number, #submit, #dropdown, #comments{
+  width: 100%;
+  height: 2.7em;
+  background-color: #F9F8E6;
+  border: none;
+  border-radius: 10px;
+  outline: 0;
+}
+
+#submit {
+  font-family: 'DM Mono', monospace;
+  font-weight: bold;
+  border-radius: 0;
+  background-color: #FAE48D;
+  font-size: 1.5em;
+}
+#submit:hover {background-color: #F9ECB0;}
+
+#comments {
+  height: 10em;
+  width: 100%;
+}
+
